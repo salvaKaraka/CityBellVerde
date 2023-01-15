@@ -1,0 +1,62 @@
+.seccion-banner{
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay:2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.seccion-servicios{
+    animation: slideInDown;
+    animation-duration: 1s;
+}
+
+.seccion-contacto{
+    animation: slideInUp;
+    animation-duration: 2s;
+}
+
+.seccion-mapa{
+    animation: backInLeft;
+    animation-duration: 1s;
+    animation-delay:1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+footer{
+    animation: fadeIn;
+    animation-duration: 4s;
+}
+
+nav{
+    animation: slideInLeft;
+    animation-duration: 1s;   
+}
+
+nav .contenedor-logo{
+    animation: backInDown;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.seccion-cabanas .contenedor-tarjetas{
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+button,a{
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+button:hover,button:focus,
+a:hover,a:focus{
+    animation: pulse;
+    animation-duration: 1s;
+}

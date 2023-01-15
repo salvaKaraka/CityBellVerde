@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>City Bell Verde - Alquiler de Cabañas</title> 
+    
+
+    <!--Slider scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+    	        touch: true,
+            	pauseOnAction: false,
+    	        pauseOnHover: false,
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/e589e4bed2.js" crossorigin="anonymous"></script> <!--fontawesome-->
+
+    <!--Style Sheets-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+
+    <!--Scripts-->
+    <script defer type="text/javascript" src="js/AbrirGaleria.js"></script>
+    
+    <!--Animate css-->
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animaciones.css">
+    
+    <!--seo-->
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="description"  content="City Belll Verde: Alqiuiler de duplex y monoambientes completamente equipados en City Bell, provincia de Buenos Aires, Argentina.">
+    <meta name="keywords"  content="alquiler city bell, cabañas, vacaciones, alquiler, duplex, monoambiente, city bell, buenos aires, argentina">
+
+
+</head>
+<body>
+    <header id="#top">
+        <nav>
+            <figure class="contenedor-logo"><img class="logo" src="images/logo.webp" alt="logo"></figure>
+        </nav>
+    </header>
+
+    <h1 style="color: transparent ; position: absolute;">City Bell Verde</h1>
+    <h2 style="color: transparent ; position: absolute;">Cabañas en City Bell</h2>
+
+    <secction class="seccion-banner"> 
+        
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/1.webp" alt="imagen1">
+                </li>
+                <li>
+                    <img  loading="lazy"  src="images/2.webp" alt="imagen2">
+                </li>
+                <li>
+                    <img loading="lazy" src="images/3.webp" alt="imagen3">
+                </li>
+                <li>
+                    <img loading="lazy" src="images/4.webp" alt="imagen4">
+                </li>
+                <li>
+                    <img loading="lazy" src="images/5.webp" alt="imagen5">
+                </li>
+            </ul>
+        </div>
+        
+    </secction>
+
+
+    
+    <section class="seccion-cabanas">
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <div class="contenido">
+                    <figure><img class="icono-cabana" src="images/duplex.webp" alt="duplex"></figure>
+                    <h3>Duplex</h3>
+                    <div class="especificaciones">
+                        
+                        <div class="item">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="dato">4 <span>personas</span></p>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-bed"></i> 
+                            <p class="dato">2 <span>cuartos</span></p>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-chart-area"></i> 
+                            <p class="dato">80 <span>mts2</span></p>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-toilet"></i>
+                            <p class="dato">2 <span>baños</span></p>
+                        </div>    
+                    </div>
+                    <button id="btn-abrir-galeria-duplex">Ver Fotos</button>
+                    <a target="_blank" href="pdf/Informacion_City_Bell_Verde_Duplex.pdf"  aria-label="Ver mas detalles">+<span> Info</span></a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="contenido">
+                    <figure><img class="icono-cabana" src="images/house.webp" alt="duplex"></figure>
+                    <h3>Monoambientes</h3>
+                    <div class="especificaciones">
+                        
+                        <div class="item">
+                                <i class="fa-solid fa-user"></i>
+                                <p class="dato">2 <span>personas</span></p>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-bed"></i> 
+                            <p class="dato">1 <span>cuarto</span></p>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-chart-area"></i> 
+                            <p class="dato">30 <span>mts2</span></p>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa-solid fa-toilet"></i>
+                            <p class="dato">1 <span>baño</span></p>
+                        </div>    
+                    </div>
+                    <button id="btn-abrir-galeria-monoambientes">Ver Fotos</button>
+                    <a target="_blank" href="pdf/Informacion_City_Bell_Verde_Monoambientes.pdf"  aria-label="Ver mas detalles">+<span> Info</span></a>
+                </div>
+            </div>
+        </div>
+
+        <dialog class="galeria" id="galeria-duplex">
+
+            <button id="btn-cerrar-galeria-duplex" class="btn-cerrar-galeria">x</button>
+            
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img loading="lazy" src="images/1.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/2.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/3.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/4.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/5.webp" alt="">
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+
+        <dialog class="galeria" id="galeria-monoambientes">
+            
+            <button id="btn-cerrar-galeria-monoambientes" class="btn-cerrar-galeria">x</button>
+
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img loading="lazy" src="images/1.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/2.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/3.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/4.webp" alt="">
+                    </li>
+                    <li>
+                        <img loading="lazy" src="images/5.webp" alt="">
+                    </li>
+                </ul>
+            </div>
+
+        </dialog>
+        
+    </section>
+
+    <h2 class="servicios-h2">Servicios</h2>
+
+    <section class="seccion-servicios">
+
+        <ul>
+            <li><i class="fa-solid fa-wifi"></i> <p>Internet de 50mbps</p></li>
+            <li><i class="fa-solid fa-tv"></i> <p>Television satelital</p></li>
+            <li><i class="fa-solid fa-fire-flame-simple"></i> <p>Gas natural</p></li>
+            <li><i class="fa-solid fa-car"></i> <p>Cochera</p></li>
+            <li><i class="fa-solid fa-fan"></i> <p>Aire acondicionado</p></li>
+            <li><i class="fa-solid fa-lightbulb"></i> <p>Luz</p></li>
+            <li><i class="fa-solid fa-fire-burner"></i>  <p>Parrilla</p></li>
+            <li><i class="fa-solid fa-couch"></i> <p>Muebles</p></li>
+        </ul>     
+
+    </section>
+
+
+    <section class="seccion-mapa">
+        <a class="direccion-mapa" href="https://goo.gl/maps/aARYDvAn3XQpm3nP6" target="_blank"> <i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp; City Bell, La Plata <br> 481 N°2604</a>
+
+        <div class="mapa">
+            
+            <iframe title="Ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.1566812161273!2d-58.04431123409417!3d-34.88302006306284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dd46c57ed0d5%3A0xfa6222053a5994f3!2sCity%20bell%20verde!5e0!3m2!1ses!2sar!4v1672106607340!5m2!1ses!2sar" width="100%" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+        </div>
+    </section>
+
+    <section class="seccion-contacto">
+        <h2>Contactanos</h2>
+        
+        <div class="contenedor-contacto">
+            <div class="formulario">
+                <h3>Sus datos:</h3>
+
+                <form action="php/formulario.php" method="POST">
+                    <p>
+                        <label>Nombre completo <span>*</span></label>
+                        <input placeholder="nombre apellido" type="text" name="nombre" required>
+                    </p>
+
+                    <p>
+                        <label>Correo electronico <span>*</span></label>
+                        <input placeholder="tucorreo@algo.com" type="email" name="correo" required>
+                    </p>
+
+                    <p>
+                        <label>Numero de telefono <span>*</span></label>
+                        <input placeholder="+54 221 123 4567" type="tel" name="telefono" required>
+                    </p>
+
+                    <p>
+                        <label>Asunto</label>
+                        <input placeholder="Ej: reserva" type="text" name="asunto">
+                    </p>
+
+                    <p class="block" >
+                        <label>Consulta <span>*</span></label>
+                        <textarea style="resize:vertical;" placeholder="Hola, me interesa alquilar..." name="mensaje" rows="10" required></textarea>
+                    </p>
+                    <p class="block" >
+                        <button value="Enviar" type="submit">Enviar</button>
+                    </p>
+                </form>
+
+            </div>
+
+            <div class="info">
+                <h3>Otros medios:</h3>
+
+                <ul>
+                    <li><a target="_blank" href="mailto::citybellverde2020@gmail.com?Subject=Interesado%20en%20alquilar"><i class="fa-solid fa-envelope"></i> citybellverde2020@gmail.com</a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/citybellverde/"><i class="fa-brands fa-square-facebook"></i> Citybell Verde</a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/citybellverde/?hl=es-la"><i class="fa-brands fa-instagram"></i>  @citybellverde</a></li>
+                    <li><a target="_blank" href="tel:+542215366720"><i class="fa-solid fa-phone"></i> 221-536-6720</a></li>
+                    <li><a target="_blank" href="https://www.booking.com/Share-n9afm8W"><i class="fa-solid fa-b"></i> City Bell Verde</a></li>
+                </ul>
+                <p>Por favor mencione en su mensaje la 
+                    cantidad de personas y la fecha requeriada</p>
+                <p>CityBellVerde.com</p>
+            </div>
+        </div>
+    
+    </section>
+    
+    <footer>
+        <a href="#top" class="top-button" aria-label="Volver al Inicio"><i class="fa-solid fa-arrow-up"></i></a>
+        <a href="#top" aria-label="Volver al Inicio"><img loading="lazy" class="logo-footer" src="images/logo-horizontal.webp" alt="logo"></a>
+    </footer>
+</body>
+</html>
