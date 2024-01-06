@@ -305,20 +305,43 @@ nav{
     border-right: solid #71a134;
 }
 
-footer{
+footer {
     padding: 1rem;
     background-color: #f4f4f4;
-    border-top:solid #71a134;
+    border-top: solid #71a134;
     border-width: 1rem;
     box-shadow: 0 0 1rem #1c1f28;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.logo-footer{
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ajuste para centrar horizontalmente */
+    align-items: center;
+    gap: .5rem;
+    margin: auto;
+}
+
+.logo-footer {
     width: 10rem;
     height: auto;
 }
 
+.firma {
+    color: #1c1f28;
+}
+
+.firma a{
+    color:#71a134;
+    transition: color .3s;
+}
+
+.firma a:hover{
+    color:#496721;
+}
 
 .seccion-cabanas, .seccion-servicios,
 .seccion-mapa, .seccion-contacto, .servicios-h2{
